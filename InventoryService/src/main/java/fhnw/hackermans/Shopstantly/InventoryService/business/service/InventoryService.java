@@ -1,6 +1,5 @@
 package fhnw.hackermans.Shopstantly.InventoryService.business.service;
 
-@Service
 public class InventoryService {
 	private int placeId;
     private int amount;
