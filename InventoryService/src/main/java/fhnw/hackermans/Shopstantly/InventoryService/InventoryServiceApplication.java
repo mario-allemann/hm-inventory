@@ -30,7 +30,7 @@ public class InventoryServiceApplication {
 	}
 
 	// Map test page
-	@RequestMapping("/product")
+	@RequestMapping("/warehouse")
 	@ResponseBody
 	Iterable<Warehouse> getAllProducts() {
 		return whRepo.findAll();
