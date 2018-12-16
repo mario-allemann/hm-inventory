@@ -7,4 +7,6 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface WarehouseRepo extends CrudRepository<Warehouse, Integer> {
 
+	
+	
 }

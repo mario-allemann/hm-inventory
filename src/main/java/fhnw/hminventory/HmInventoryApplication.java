@@ -1,8 +1,11 @@
 package fhnw.hminventory;
 
+import java.util.Optional;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import fhnw.hminventory.domain.Warehouse;
@@ -32,6 +35,19 @@ public class HmInventoryApplication {
 	Iterable<Warehouse> getAllItems() {
 		return whRepo.findAll();
 	}
+	
+	@RequestMapping("/getFromWarehouse")
+	@ResponseBody
+	int getFromWarehouse(@RequestParam int prodId, @RequestParam int amount) {
+		Warehouse product = whRepo.findById(prodId).get();;
+
+		product.setAmount(product.getAmount()-amount);
+		
+		return product.getAmount();
+		
+	}
+	
+	
 
 }
 
