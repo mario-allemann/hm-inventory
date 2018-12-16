@@ -1,4 +1,4 @@
-package fhnw.hackermans.shopstantlySPRING.businessServices;
+package fhnw.hackermans.inventoryService;
 
 public class InventoryService {
 	private int placeId;

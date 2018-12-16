@@ -1,4 +1,4 @@
-package fhnw.hackermans.shopstantlySPRING.domain.inventory;
+package fhnw.hackermans.inventoryService.domain.inventory;
 
 
 

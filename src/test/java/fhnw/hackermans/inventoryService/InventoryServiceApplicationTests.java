@@ -1,4 +1,4 @@
-package fhnw.hackermans.shopstantlySPRING;
+package fhnw.hackermans.inventoryService;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ShopstantlySpringApplicationTests {
+public class InventoryServiceApplicationTests {
 
 	@Test
 	public void contextLoads() {

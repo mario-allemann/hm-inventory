@@ -1,4 +1,4 @@
-package fhnw.hackermans.shopstantlySPRING;
+package fhnw.hackermans.inventoryService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -6,21 +6,20 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import fhnw.hackermans.shopstantlySPRING.domain.orderManagement.Product;
-import fhnw.hackermans.shopstantlySPRING.domain.orderManagement.ProductRepo;
+import fhnw.hackermans.inventoryService.domain.inventory.Warehouse;
+import fhnw.hackermans.inventoryService.domain.inventory.WarehouseRepo;
 
 @SpringBootApplication
 @Controller
 @EnableAutoConfiguration
-public class ShopstantlySpringApplication {
+public class InventoryServiceApplication {
 	@Autowired 
-	private ProductRepo prodRepo;
+	private WarehouseRepo whRepo;
 
 	public static void main(String[] args) {
-		SpringApplication.run(ShopstantlySpringApplication.class, args);
+		SpringApplication.run(InventoryServiceApplication.class, args);
 	}
 
 	// Map homepage
@@ -31,9 +30,9 @@ public class ShopstantlySpringApplication {
 	}
 
 	// Map test page
-	@RequestMapping("/product")
+	@RequestMapping("/warehouse")
 	@ResponseBody
-	Iterable<Product> getAllProducts() {
-		return prodRepo.findAll();
+	Iterable<Warehouse> getAllItems() {
+		return whRepo.findAll();
 	}
 }
