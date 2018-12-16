@@ -1,5 +1,6 @@
 package fhnw.hminventory;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,8 +15,7 @@ import fhnw.hminventory.domain.WarehouseRepo;
 @Controller
 @EnableAutoConfiguration
 public class HmInventoryApplication {
-
-	
+	@Autowired
 	private WarehouseRepo whRepo;
 	
 	public static void main(String[] args) {
