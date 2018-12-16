@@ -1,4 +1,4 @@
-package fhnw.hackermans.inventoryService.domain.inventory;
+package fhnw.hminventory.domain;
 
 
 

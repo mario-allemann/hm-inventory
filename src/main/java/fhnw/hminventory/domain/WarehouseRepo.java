@@ -1,4 +1,4 @@
-package fhnw.hackermans.inventoryService.domain.inventory;
+package fhnw.hminventory.domain;
 
 import org.springframework.data.repository.CrudRepository;
 
