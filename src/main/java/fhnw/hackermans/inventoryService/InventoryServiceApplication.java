@@ -18,9 +18,6 @@ public class InventoryServiceApplication {
 	@Autowired 
 	private WarehouseRepo whRepo;
 
-	public static void main(String[] args) {
-		SpringApplication.run(InventoryServiceApplication.class, args);
-	}
 
 	// Map homepage
 	@RequestMapping("/")
