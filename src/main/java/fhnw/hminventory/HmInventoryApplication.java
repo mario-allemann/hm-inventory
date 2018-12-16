@@ -47,6 +47,7 @@ public class HmInventoryApplication {
 
 		product.setAmount(product.getAmount()-amount);
 		
+		whRepo.save(product);
 		return product.getAmount();
 		
 	}
