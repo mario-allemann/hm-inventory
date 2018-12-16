@@ -30,7 +30,7 @@ public class HmInventoryApplication {
 	@RequestMapping("/")
 	@ResponseBody
 	String home() {
-		return "This is the homepage, faggots";
+		return "This is the homepage";
 	}
 
 	// Map test page
